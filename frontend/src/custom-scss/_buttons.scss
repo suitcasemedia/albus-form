@@ -1,0 +1,55 @@
+@import '../bootstrap/variables' ;
+
+button {
+   
+}
+
+.btn{
+
+    &--purple{
+        background-color: $purple;
+        color: $yellow;
+
+        a,a:visted,a:active{
+            color: $yellow;
+        }
+
+    }
+}
+
+.btn-save{
+    color:#ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    background: $albus-pink;
+    border: 1px solid #ffffff;
+    &:hover{
+        opacity:0.9
+    }
+}
+.btn-red{
+    background-color: red;
+    color:white;
+
+}
+
+.signup-btn{
+    background: $albus-pink;
+    color:#ffffff;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+    &--disabled{
+        background-color: #979797;
+    }
+    &:hover{
+        opacity: 0.7;
+    }
+    &--outline{
+        background: white;
+        border: 1px $albus-pink solid ;
+        color: $albus-pink;
+    }
+}

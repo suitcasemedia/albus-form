@@ -1,0 +1,33 @@
+body{
+    color: #444;
+    
+}
+h2,h3,h4{
+   // color: $purple;
+}
+.fa{
+    color: $yellow;
+}
+a {
+    color: $purple;
+}
+a  .fa {
+    color: $yellow;
+    &:hover{
+        color: $purple;
+    }
+    &--purple {
+        color: $purple;
+        &:hover{
+            color: $yellow;
+        }
+    }
+}
+h1.hero{
+    font-weight: 300;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+

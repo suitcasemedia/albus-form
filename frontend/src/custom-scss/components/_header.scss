@@ -1,0 +1,26 @@
+.header{
+  height:93px;
+  color: $light-grey-text;
+
+  a{
+    color: $light-grey-text;
+   
+  }
+  li{
+   
+    padding: 20px 0px 20px 20px;
+  }
+}
+
+.secondary-navbar{
+  background:$light-grey;
+  position:relative;
+  padding:2em;
+  height:94px;
+}
+
+.tertiary-navbar{
+  position:relative;
+  padding:2em;
+  height:94px;
+}

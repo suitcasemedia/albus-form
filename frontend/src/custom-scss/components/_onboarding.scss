@@ -1,0 +1,23 @@
+.onboarding {
+    height: 100vh;
+    background-image: url('assets/albus-patterns-02.png');
+   
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire */
+    background-color: #F6F6F6;
+
+    form {
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+
+    a{
+        text-decoration: underline;
+    }
+
+    
+}
+

@@ -1,0 +1,19 @@
+// should already be in bootstrap but not coming through
+.is-invalid{
+    border-color  : $red;
+}
+
+.invalid-feedback{
+    color: $red;
+}
+.form-wrapper{
+    margin-top:4em;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: '5px';
+  
+    padding: 50px
+
+}  
+
+

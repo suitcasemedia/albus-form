@@ -1,0 +1,206 @@
+@import url("http://fonts.googleapis.com/css?family=Josefin+Sans");
+body {
+  color: #444; }
+
+.fa {
+  color: #ffd500; }
+
+a {
+  color: #613d7c; }
+
+a .fa {
+  color: #ffd500; }
+  a .fa:hover {
+    color: #613d7c; }
+  a .fa--purple {
+    color: #613d7c; }
+    a .fa--purple:hover {
+      color: #ffd500; }
+
+h1.hero {
+  font-weight: 300;
+  position: absolute;
+  bottom: 30px;
+  left: 30px; }
+
+.btn--purple {
+  background-color: #613d7c;
+  color: #ffd500; }
+  .btn--purple a, .btn--purple a:visted, .btn--purple a:active {
+    color: #ffd500; }
+
+.btn-save {
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  background: #FC6061;
+  border: 1px solid #ffffff; }
+  .btn-save:hover {
+    opacity: 0.9; }
+
+.btn-red {
+  background-color: red;
+  color: white; }
+
+.signup-btn {
+  background: #FC6061;
+  color: #ffffff;
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.8em; }
+  .signup-btn--disabled {
+    background-color: #979797; }
+  .signup-btn:hover {
+    opacity: 0.7; }
+  .signup-btn--outline {
+    background: white;
+    border: 1px #FC6061 solid;
+    color: #FC6061; }
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 2; }
+
+.ReactModal__Content.ReactModal__Content--after-open.modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px; }
+
+.header {
+  height: 93px;
+  color: #929AA7; }
+  .header a {
+    color: #929AA7; }
+  .header li {
+    padding: 20px 0px 20px 20px; }
+
+.secondary-navbar {
+  background: #EEEEF1;
+  position: relative;
+  padding: 2em;
+  height: 94px; }
+
+.tertiary-navbar {
+  position: relative;
+  padding: 2em;
+  height: 94px; }
+
+.react-datepicker__input-container {
+  width: 100% !important; }
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+  margin-top: 25px; }
+
+.onboarding {
+  height: 100vh;
+  background-image: url("assets/albus-patterns-02.png");
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire */
+  background-color: #F6F6F6; }
+  .onboarding form {
+    background-color: #ffffff;
+    border-radius: 5px; }
+  .onboarding a {
+    text-decoration: underline; }
+
+.campaign-card h5 {
+  font-weight: bold; }
+
+.campaign-card ul {
+  list-style-type: none;
+  display: inline;
+  padding: 0px;
+  font-size: 80%;
+  color: #777; }
+  .campaign-card ul li {
+    display: inline;
+    border: 1px solid #aaa;
+    padding: 5px;
+    margin-right: 5px; }
+
+.campaign-card p {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 90%; }
+
+.campaign-card--brand-logo {
+  margin-top: 10px;
+  float: right;
+  border-radius: 50px;
+  border: 1px solid #777;
+  width: 75px;
+  height: 75px; }
+
+.nav-logo {
+  font-family: 'Lato', sans-serif;
+  color: #FC6061;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: -5px; }
+  .nav-logo a {
+    color: #FC6061;
+    padding: 0px; }
+
+.u-faux-block-link {
+  position: relative; }
+
+.u-faux-block-link a,
+.u-faux-block-link abbr[title],
+.u-faux-block-link__promote {
+  position: relative;
+  z-index: 1; }
+
+.u-faux-block-link__overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0); }
+
+a.u-faux-block-link__overlay {
+  position: absolute;
+  z-index: 0;
+  opacity: 0; }
+  a.u-faux-block-link__overlay:focus {
+    outline: none; }
+
+.u-faux-block-link--hover .u-faux-block-link__cta {
+  text-decoration: underline; }
+
+.is-invalid {
+  border-color: #d9534f; }
+
+.invalid-feedback {
+  color: #d9534f; }
+
+.form-wrapper {
+  margin-top: 4em;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: '5px';
+  padding: 50px; }
+
+.bg-body-light-grey {
+  background: #F6F6F6; }
