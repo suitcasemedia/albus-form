@@ -1,92 +1,47 @@
 import React, { Component } from 'react';
 import Header from './tempNewCampaignHeader';
 import { connect } from 'react-redux';
-
+import ProgressList from './ProgessList';
+import Form1 from './Form1';
+import Form2 from './Form2';
+import Form3 from './Form3';
+import Form4 from './Form4';
+import Results from './Results';
 
 class CreateCampaignNavPage extends Component {
+
+    state= {
+        currentPage: 0,
+    }
+
+    navTo = currentPage =>{
+        this.setState({currentPage})
+    }
   render() {
+    const {currentPage} = this.state;
     return (
       <div>
         <Header />
-        <div className="bg-body-light-grey">
-          <div className="container">
-            <div className="tertiary-navbar create-campaign-nav row mb-4">
-              <div className="col-md-1"/>
-              <div className="col-md-6 col-lg-8">
+        { currentPage == 0 && <ProgressList navTo={this.navTo} />}
+        { currentPage == 5 && <Results navTo={this.navTo} />}
+        <div className="row">
 
-                <div className="create-campaign-nav__item create-campaign-nav__item--complete">
-                    <span className="create-campaign-nav__tick">
-                        <span className="create-campaign-nav__l">
-                            L
-                        </span>   
-                    </span>
-                    <h6 className="new-campaign-item__name">Define your campaign</h6>
-                    <p>Name and describe your campaign</p>
-                    <p><a>Edit</a></p>
+            <div className="col-md-3"/>
+                <div className="col-md-6">
+                   
+                    { currentPage == 1 && <Form1 navTo={this.navTo} />}
+                    { currentPage == 2 && <Form2 navTo={this.navTo} />}
+                    { currentPage == 3 && <Form3 navTo={this.navTo} />}
+                    { currentPage == 4 && <Form4 navTo={this.navTo} />}
+                   
                 </div>
-
-                <div className="create-campaign-nav__item">
-                    <span className="create-campaign-nav__number create-campaign-nav__number--in-progress">2</span>
-                    <h6 className="new-campaign-item__name">Select influencers</h6>
-                    <p>Name and describe your campaign</p>
-                    <btn className="signup-btn">continue</btn>
-                    <p className="mt-3"><a>Edit</a></p>
-                </div>
-
-                <div className="create-campaign-nav__item">
-                    <span className="create-campaign-nav__number">3</span>
-                    <h6 className="new-campaign-item__name">Define deliverable content</h6>
-                    <p>Name and describe your campaign</p>
-                    <p><a>Edit</a></p>
-                </div>
-
-                <div className="create-campaign-nav__item">
-                    <span className="create-campaign-nav__number">4</span>
-                    <h6 className="new-campaign-item__name">Add post links and tags</h6>
-                    <p>Name and describe your campaign</p>
-                    <p><a>Edit</a></p>
-                </div>
-
-                <div className="create-campaign-nav__item create-campaign-nav__item ">
-                    <span className="create-campaign-nav__number ">5</span>
-                    <h6 className="new-campaign-item__name">Vew results</h6>
-                    <p>Name and describe your campaign</p>
-                    <p><a>Edit</a></p>
-                </div>
-              
-
-
-              </div>
-              <div className="col-md-5 col-lg-3 create-campaign-nav__info p-4">
-                <div className="create-campaign-nav__thumbnail-upload mb-4">
-                    <p>
-                        Add campaign thumbnail
-                    </p>
-                    <button className="signup-btn signup-btn--outline">
-                        Upload
-                    </button>
-              
-                </div>
-                 <h6>Naked Cherry Palette Launch</h6>
-                <p>Brand: <strong>Urban Decay</strong></p>
-                <p>Objective: <strong>Engagement</strong></p>
-                <hr/>
-                <p>
-                  Influencer campaign to promote the UK launch of Naked 5.
-                </p>
-                <span className="tag">
-                    Makeup
-                </span>
-             
-              </div> 
-                                 
-            </div>      
-                  
-          </div>
-        
-         
+            <div className="col-md-3"/>
+            
           
-        </div> 
+       
+        </div>
+       
+        
         <footer/>
       </div>
     );
