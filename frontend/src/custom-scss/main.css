@@ -31,7 +31,9 @@ h1.hero {
 
 .btn-save {
   color: #ffffff;
-  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 30px;
   border-radius: 20px;
   background: #FC6061;
   border: 1px solid #ffffff; }
@@ -86,18 +88,20 @@ h1.hero {
   color: #929AA7; }
   .header a {
     color: #929AA7; }
-  .header li {
+  .header ul.left li {
+    padding: 20px 20px 20px 0px; }
+  .header ul.right li {
     padding: 20px 0px 20px 20px; }
 
 .secondary-navbar {
   background: #EEEEF1;
   position: relative;
-  padding: 2em;
+  padding: 2em 0;
   height: 94px; }
 
 .tertiary-navbar {
   position: relative;
-  padding: 2em;
+  padding: 2em 0;
   height: 94px; }
 
 .react-datepicker__input-container {
@@ -150,6 +154,29 @@ h1.hero {
   width: 75px;
   height: 75px; }
 
+.top-campaign-card {
+  height: 12em;
+  text-align: center; }
+  .top-campaign-card__name {
+    font-weight: bold;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: #000;
+    padding-top: 30px;
+    padding-bottom: 20px; }
+  .top-campaign-card__white-text {
+    color: #fff;
+    margin-top: -50px;
+    text-align: left;
+    font-weight: bold; }
+  .top-campaign-card__category-icon {
+    margin-top: 10px;
+    float: right;
+    border-radius: 20px;
+    border: 1px solid #777;
+    width: 40px;
+    height: 40px; }
+
 .nav-logo {
   font-family: 'Lato', sans-serif;
   color: #FC6061;
@@ -159,6 +186,84 @@ h1.hero {
   .nav-logo a {
     color: #FC6061;
     padding: 0px; }
+
+.create-campaign-nav {
+  font-weight: 300;
+  color: #000;
+  width: 100%; }
+  .create-campaign-nav__thumbnail-upload {
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #D2D6DB;
+    height: 325px; }
+  .create-campaign-nav h6 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #000; }
+  .create-campaign-nav__info {
+    overflow: hidden;
+    min-height: 650px;
+    background: #ffffff; }
+    .create-campaign-nav__info::after {
+      display: block;
+      content: "";
+      clear: both; }
+  .create-campaign-nav div:last-child {
+    border: none; }
+  .create-campaign-nav a {
+    color: #929AA7 !important;
+    text-decoration: underline !important; }
+  .create-campaign-nav__item {
+    height: 200px;
+    position: relative;
+    border-left: 3px solid #D2D6DB;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px 0px 75px; }
+    .create-campaign-nav__item--complete {
+      border-left: 3px solid #00C1BA; }
+  .create-campaign-nav__number {
+    border: 3px solid #D2D6DB;
+    height: 50px;
+    width: 50px;
+    padding: 8px 10px 12px 17px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    left: -27px;
+    background: #ffffff;
+    font-size: 18px; }
+    .create-campaign-nav__number--bottom {
+      border: none; }
+    .create-campaign-nav__number--in-progress {
+      border: 3px solid #00C1BA;
+      color: #00C1BA; }
+  .create-campaign-nav__tick {
+    border: 3px solid #00C1BA;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    left: -27px;
+    color: #ffffff;
+    background: #00C1BA;
+    font-family: arial;
+    -ms-transform: scaleX(-1) rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(-45deg);
+    /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(-45deg);
+    font-size: 35px; }
+  .create-campaign-nav__l {
+    position: absolute;
+    top: -6px;
+    left: 14px; }
+  .create-campaign-nav .tag {
+    border: 1px solid #D2D6DB;
+    color: #929AA7;
+    padding: 5px;
+    font-size: 80%; }
 
 .u-faux-block-link {
   position: relative; }
@@ -203,4 +308,5 @@ a.u-faux-block-link__overlay {
   padding: 50px; }
 
 .bg-body-light-grey {
-  background: #F6F6F6; }
+  background: #F6F6F6;
+  height: 100vh; }

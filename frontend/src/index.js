@@ -11,10 +11,13 @@ import SignIn from './onboarding/components/signin';
 import TwoStepVarify from './onboarding/components/signin-2-step-verify';  
 import ResetPassword from './onboarding/components/reset-password';
 import CampaignsList from './campaigns/CampaignsList';
+import TopCampaignsList from './campaigns/TopCampaignsList';
 import registerServiceWorker from './registerServiceWorker';
 import PostList from './components/AddNewCampaign';
 import './font-awesome/css/font-awesome.min.css'
 import './App.css';
+import CreateCampaignNavPage from './create-campaign/CreateCampaignNavPage';
+import CreateCampaignForm from './create-campaign/CreateCampaignForm';
 
 const logger = store => next => action  => {
     console.group(action.type)
@@ -45,7 +48,11 @@ ReactDOM.render(
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/signin-2-step-varify" component={TwoStepVarify} />
           <Route exact path="/reset-password" component={ResetPassword} />
-          <Route exact path="/campaigns" component={CampaignsList} />           
+          <Route exact path="/campaigns" component={CampaignsList} />    
+          <Route exact path="/top-campaigns" component={TopCampaignsList} /> 
+          <Route exact path="/create-campaign" component={CreateCampaignNavPage} /> 
+          <Route exact path="/create-campaign-form" component={CreateCampaignForm} /> 
+                 
         </Switch>
       </div>
 

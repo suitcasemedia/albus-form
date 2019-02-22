@@ -1,0 +1,29 @@
+.top-campaign-card{
+    height:12em;
+    text-align:center;
+    &__name {
+        font-weight: bold;
+     
+        font-size: 1.8em;
+        font-weight: 300;
+        color: #000;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+   &__white-text{
+       color: #fff;
+       margin-top: -50px;
+       text-align: left;
+       font-weight: bold;
+   }
+   &__category-icon{
+    margin-top: 10px;
+    float:right;
+    border-radius: 20px;
+    border: 1px solid #777;
+    width: 40px;
+    height: 40px;
+
+   }
+}

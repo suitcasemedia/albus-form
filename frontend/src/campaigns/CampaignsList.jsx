@@ -22,18 +22,13 @@ class CampaignsList extends Component {
         <div className="container  ">
           <div className="tertiary-navbar row">
 
-            <div className="col-md-2">
-              <span className="text-right pr-2">0 selected All</span>
+            <div className="col-xl-2 col-lg-3">
+              <span className="text-right float-right pr-2">0 selected All</span>
             </div>
-            <div className="col-md-2">
+            <div className="col-xl-10 col-lg-9">
             search icon
             </div>
-            <div className="col-md-2">
-            </div>
-
-             <div className="col-md-6">
-            
-            </div>
+           
 
           </div>
           <div className="row">

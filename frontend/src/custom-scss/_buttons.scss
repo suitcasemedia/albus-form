@@ -19,7 +19,10 @@ button {
 
 .btn-save{
     color:#ffffff;
-    padding: 10px;
+   // padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
     border-radius: 20px;
     background: $albus-pink;
     border: 1px solid #ffffff;
@@ -32,6 +35,8 @@ button {
     color:white;
 
 }
+
+
 
 .signup-btn{
     background: $albus-pink;

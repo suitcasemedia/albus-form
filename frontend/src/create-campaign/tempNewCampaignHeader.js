@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Loading from 'react-loading';
-import InfluencerDeliverablesForm from './InfluencerDeliverablesForm';
+
 import { Link } from 'react-router-dom';
-import { createPost } from '../actions/posts';
+
 
 class Header extends Component {
   render() {
@@ -30,21 +29,20 @@ class Header extends Component {
           </ul>
         </nav>
         <div className="secondary-navbar pt-2">
-        <nav className="navbar d-block text-light header container">
-          <ul className="nav float-left left">
-            <li>
-              <Link to="/">Campaigns</Link>
-            </li>
-            <li>
-              <Link to="/">Hall of fame</Link>
-            </li>
-          </ul>
-          <ul className="nav float-right right">
-            <li>
-              <button className="btn-save">+ New Campaign </button>
-            </li>
-          </ul>
-        </nav>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4  pt-3">
+                    <h4>Create new campaign</h4>
+                    </div>
+               
+                    <div className="col-md-8  pt-3">
+                        <button className="btn-save float-right">Exit</button>
+                    </div>
+                </div>     
+            </div>
+          
+        
+       
 
         </div>
       </div>   
