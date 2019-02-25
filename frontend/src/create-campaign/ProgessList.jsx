@@ -31,7 +31,7 @@ class ProgressList extends Component {
                     <span className="create-campaign-nav__number create-campaign-nav__number--in-progress">2</span>
                     <h6 className="new-campaign-item__name">Select influencers</h6>
                     <p>Name and describe your campaign</p>
-                    <btn className="signup-btn">continue</btn>
+                    <span className="signup-btn btn">continue</span>
                     <p className="mt-3">
                         <a href="#" onClick={()=>this.props.navTo(2)}>Edit</a>
                     </p>
@@ -97,7 +97,10 @@ class ProgressList extends Component {
          
           
         </div> 
-        <footer/>
+       
+      
+
+
       </div>
     );
   }

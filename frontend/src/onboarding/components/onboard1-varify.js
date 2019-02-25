@@ -59,7 +59,7 @@ const Onboarding1Varify = props => {
             </small>
 
          
-            <div style={{width:"150px"}} className="mt-5 mb-5">
+            <div style={{width:"160px"}} className="mt-5 mb-5">
               <span className='signup-btn'>send code</span>
             </div>
             <Field

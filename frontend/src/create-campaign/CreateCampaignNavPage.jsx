@@ -10,39 +10,67 @@ import Results from './Results';
 
 class CreateCampaignNavPage extends Component {
 
-    state= {
-        currentPage: 0,
+  state = {
+    currentPage: 0,
+  }
+
+  navTo = currentPage => {
+    this.setState({ currentPage })
+  }
+
+  renderContinueButton = () => {
+    const { currentPage } = this.state;
+
+    if (
+      currentPage === 1 ||
+      currentPage === 2 ||
+      currentPage === 3 ||
+      currentPage === 4) {
+      return (
+
+        <div className="row">
+          <div className="col-md-12">
+
+            <hr />
+            <div>
+              <button onClick={() => this.navTo(0)} type="submit" className="float-right next signup-btn btn">
+                contimue
+                        </button>
+            </div>
+
+          </div>
+        </div>
+
+
+      )
     }
 
-    navTo = currentPage =>{
-        this.setState({currentPage})
-    }
+  }
+
   render() {
-    const {currentPage} = this.state;
+    const { currentPage } = this.state;
     return (
       <div>
+       
         <Header />
-        { currentPage == 0 && <ProgressList navTo={this.navTo} />}
-        { currentPage == 5 && <Results navTo={this.navTo} />}
-        <div className="row">
 
-            <div className="col-md-3"/>
-                <div className="col-md-6">
-                   
-                    { currentPage == 1 && <Form1 navTo={this.navTo} />}
-                    { currentPage == 2 && <Form2 navTo={this.navTo} />}
-                    { currentPage == 3 && <Form3 navTo={this.navTo} />}
-                    { currentPage == 4 && <Form4 navTo={this.navTo} />}
-                   
-                </div>
-            <div className="col-md-3"/>
-            
-          
-       
+        {currentPage == 0 && <ProgressList navTo={this.navTo} />}
+        {currentPage == 5 && <Results navTo={this.navTo} />}
+
+
+        <div className="row">
+          <div className="col-md-3" />
+          <div className="col-md-6">
+
+            {currentPage === 1 && <Form1 navTo={this.navTo} />}
+            {currentPage === 2 && <Form2 navTo={this.navTo} />}
+            {currentPage === 3 && <Form3 navTo={this.navTo} />}
+            {currentPage === 4 && <Form4 navTo={this.navTo} />}
+
+          </div>
+          <div className="col-md-3" />
         </div>
-       
-        
-        <footer/>
+        {this.renderContinueButton()}
       </div>
     );
   }
