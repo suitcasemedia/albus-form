@@ -6,14 +6,23 @@ import CampaignCard from './CampaignCard';
 import CampaignFilters from './CampaignFilters';
 
 import {
-  fetchPosts,
-  fetchCategories,
-  setActiveCategory,
-} from './../actions/posts';
+  fetchMyCampaigns,
+
+} from './actions';
 import { connect } from 'react-redux';
 
 
 class CampaignsList extends Component {
+
+
+  componentDidMount() {
+    const { fetchMyCampaigns } = this.props;
+    console.log('did mount', fetchMyCampaigns)
+   if (fetchMyCampaigns) {
+     fetchMyCampaigns();
+   }
+   
+}
   render() {
     return (
       <div>
@@ -93,12 +102,27 @@ class CampaignsList extends Component {
     );
   }
 }
-function mapDispatchToProps(dispatch) {
-  return {};
+function mapDispatchToProps(dispatch){
+  console.log('map dispatch to props')
+  return{
+   
+    fetchMyCampaigns : () => dispatch(fetchMyCampaigns()),
+   
+  }
 }
-function mapStateToProps(state, ownProps) {
-  return {};
+function mapStateToProps({campaigns}, ownProps){
+  console.log('map state to props')
+  if( ownProps.match.params.category ){
+     
+  }
+
+ 
+return{
+      campaigns
+    
+      }
 }
+
 
 export default connect(
   mapStateToProps,

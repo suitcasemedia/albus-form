@@ -3,15 +3,11 @@ import Header from './header';
 import Loading from 'react-loading';
 import sortByHelper from '../utils/sort-by-helper.js';
 import CreatePost from './InfluencerDeliverablesForm';
-import {
-  fetchPosts,
-  fetchCategories,
-  setActiveCategory,
-} from '../actions/posts';
+
 import { connect } from 'react-redux';
 import createPost from './InfluencerDeliverablesForm';
 
-class PostList extends Component {
+class DeliverablesForm extends Component {
   render() {
     return (
       <div>
@@ -45,4 +41,4 @@ function mapStateToProps(state, ownProps) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(PostList);
+)(DeliverablesForm);

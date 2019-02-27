@@ -4,10 +4,8 @@ import TopCampaignCard from './TopCampaignCard';
 import Leaderboard from './LeaderBoard';
 
 import {
-  fetchPosts,
-  fetchCategories,
-  setActiveCategory,
-} from '../actions/posts';
+  fetchCampaigns
+} from './actions';
 import { connect } from 'react-redux';
 
 

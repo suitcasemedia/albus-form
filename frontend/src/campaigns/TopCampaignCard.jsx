@@ -8,11 +8,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import {
-  fetchPosts,
-  fetchCategories,
-  setActiveCategory,
-} from './../actions/posts';
 import { connect } from 'react-redux';
 
 

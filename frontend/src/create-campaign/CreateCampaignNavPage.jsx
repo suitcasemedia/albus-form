@@ -34,7 +34,7 @@ class CreateCampaignNavPage extends Component {
             <hr />
             <div>
               <button onClick={() => this.navTo(0)} type="submit" className="float-right next signup-btn btn">
-                contimue
+                continue
                         </button>
             </div>
 
@@ -58,7 +58,7 @@ class CreateCampaignNavPage extends Component {
         {currentPage == 5 && <Results navTo={this.navTo} />}
 
 
-        <div className="row">
+        <div className="row ml-0 mr-0">
           <div className="col-md-3" />
           <div className="col-md-6">
 

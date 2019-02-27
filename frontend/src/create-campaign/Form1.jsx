@@ -3,6 +3,7 @@ import { Field, reduxForm } from 'redux-form'
 import validate from './validate'
 import renderTextField from './renderTextField'
 import RenderSelectField from './renderSelectField'
+import RenderMultiSelectField from './renderMultiSelectField'
 import FormControl from '@material-ui/core/FormControl';
 import renderTextAreaField from './renderTextAreaField';
 
@@ -54,7 +55,7 @@ const Form1 = props => {
                 <Field
                   name="brand"
                   type="text"
-                  component={RenderSelectField}
+                  component={RenderMultiSelectField}
                   label="Campaign name"
                   options={brandOptions}
                   placeholder="Select brand..."
@@ -71,9 +72,9 @@ const Form1 = props => {
                   name="productCategory"
                   type="text"
                   component={RenderSelectField}
-                  label="Last Name"
+                  label="category"
                   options={categoryOptions}
-                  placeholder="Select brand..."
+                  placeholder="Select category..."
                 />
               
               </div>
@@ -83,7 +84,7 @@ const Form1 = props => {
                 <br/>
                 <br/>
                 <Field
-                  name="productCategory"
+                  name="campaignObjectives"
                   type="text"
                   component={RenderSelectField}
                   label="Last Name"
@@ -121,7 +122,7 @@ const Form1 = props => {
                     name="campaignDescription"
                     type="text"
                     component={renderTextAreaField}
-                    label="Describe your campaign"
+                    label="Enter description here"
 
                     placeholder="Describe the campaign..."
                   />
@@ -137,18 +138,7 @@ const Form1 = props => {
        
        
       </form>
-      <div className="row">
-        <div className="col-md-12">
-          <footer>
-          <hr />
-           <div>
-            <button onClick={()=>props.navTo(0)} type="submit" className="float-right next">
-              Next
-            </button>
-          </div>
-        </footer>       
-        </div> 
-      </div>      
+        
     </div>
   )
 }

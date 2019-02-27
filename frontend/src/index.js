@@ -13,11 +13,11 @@ import ResetPassword from './onboarding/components/reset-password';
 import CampaignsList from './campaigns/CampaignsList';
 import TopCampaignsList from './campaigns/TopCampaignsList';
 import registerServiceWorker from './registerServiceWorker';
-import PostList from './components/AddNewCampaign';
 import './font-awesome/css/font-awesome.min.css'
 import './App.css';
 import CreateCampaignNavPage from './create-campaign/CreateCampaignNavPage';
 import CreateCampaignForm from './create-campaign/CreateCampaignForm';
+import DeliverablesForm from './components/DeliverablesForm';
 
 const logger = store => next => action  => {
     console.group(action.type)
@@ -42,7 +42,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route exact path="/" component={PostList} />
+          <Route exact path="/" component={DeliverablesForm} />
           <Route exact path="/signup" component={Onboard1} />
           <Route exact path="/signup-varify" component={Onboard1Varify} />
           <Route exact path="/signin" component={SignIn} />

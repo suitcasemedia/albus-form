@@ -7,7 +7,7 @@ class ProgressList extends Component {
   render() {
     return (
       <div>
-     
+      
         <div className="bg-body-light-grey">
           <div className="container">
             <div className="tertiary-navbar create-campaign-nav row mb-4">
@@ -59,7 +59,7 @@ class ProgressList extends Component {
                     <span className="create-campaign-nav__number ">5</span>
                     <h6 className="new-campaign-item__name">Vew results</h6>
                     <p>Name and describe your campaign</p>
-                    <p><a>Edit</a></p> <p>
+                 <p>
                         <a href="#" onClick={()=>this.props.navTo(5)}>Edit</a>
                     </p>
                 </div>

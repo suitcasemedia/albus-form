@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Loading from 'react-loading';
 import InfluencerDeliverablesForm from './InfluencerDeliverablesForm';
 import { Link } from 'react-router-dom';
-import { createPost } from '../actions/posts';
+
 
 class Header extends Component {
   render() {
